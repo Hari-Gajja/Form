@@ -6,20 +6,22 @@
 }
 
 body {
-    width: 100%;
+    width: 90%;
     height: 100vh;
+    margin-top: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #e5e9f4;
-    margin-top: 0; /* Remove the margin-top */
+}
+
+.receipt{
+    width: 90%;
 }
 
 .login-form {
-    width: 90%;
-    max-width: 350px;
+    width: 350px;
     height: auto;
-    margin: 20px; /* Add margin for spacing */
 }
 
 .form-title {
@@ -90,33 +92,37 @@ button:active {
     font-weight: bold;
 }
 
+
 .receipt textarea {
     width: 100%;
     padding: 10px;
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: inset -2px -2px 5px #fff, inset 2px 2px 5px #babecc;
+    
 }
 
-.favicon {
+.favicon{
     border-radius: 5px;
 }
 
-img {
-    border-radius: 20px;
-    margin-top: 0; /* Remove the margin-top */
+img{
+    border-radius:20px ;
+    margin-top: 450px;
+    width: 90%;
     box-shadow: inset -2px -2px 5px #fff, inset 2px 2px 5px #babecc;
 }
 
 .footer {
-    position: relative;
+    position:relative;
     bottom: 0;
-    width: 100%;
+    width: 90%;
     background: #e5e9f4;
     box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.7), 6px 6px 16px rgba(0, 0, 0, 0.2);
     padding: 15px;
     text-align: center;
     justify-content: center;
+    /* Ensure footer is on top */
 }
 
 .receipt .footer p {
@@ -125,27 +131,3 @@ img {
     font-size: 1em;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .login-form {
-        width: 80%;
-    }
-
-    img {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .login-form {
-        width: 95%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    body {
-        margin-top: 20px; /* Add margin-top for small screens */
-    }
-}
